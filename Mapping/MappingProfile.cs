@@ -12,6 +12,9 @@ namespace Task5.Mapping
                 .ForMember(dest => dest.DepartmentName,
                 opt => opt.MapFrom(src => src.Department.DepartmentName));
 
+            
+            
+            
             CreateMap<EmployeeCreateDto, Employee>();
             CreateMap<Department, DepartmentDto>();
         }
